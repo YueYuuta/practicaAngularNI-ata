@@ -1,0 +1,28 @@
+
+<div class="bg-img">
+    <div class="content">
+        <form [formGroup]="loginForm" (ngSubmit)="login($event)" novalidate>
+            <div class="field">
+                <span class="fa fa-user"></span>
+                <input type="text" placeholder="Ingrese el usuario" formControlName="Usuario" >
+            </div>
+            <div class="field space">
+                <span class="fa fa-lock"></span>
+                <input type="password"  placeholder="Ingrese la contraseña" formControlName="Contraseña"/>
+            </div>
+            <div class="pass">
+                
+            </div>
+            <div class="field">
+                <input type="submit" value="Ingresar" [disabled]="loginForm.invalid" > 
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
